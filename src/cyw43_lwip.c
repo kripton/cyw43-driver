@@ -156,7 +156,7 @@ void cyw43_cb_tcpip_init(cyw43_t *self, int itf) {
     netif_add(n, &ipconfig[0], &ipconfig[1], &ipconfig[2], self, cyw43_netif_init, tcpip_input);
     #endif
     netif_set_hostname(n, CYW43_HOST_NAME);
-    netif_set_default(n);
+    //netif_set_default(n);
     netif_set_up(n);
 
 //    #ifndef NDEBUG
